@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0070f3">
+    <meta name="description" content="Full Stack Developer Portfolio">
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body class="font-sans text-gray-900 dark:text-white bg-white dark:bg-dark-background transition-colors duration-300">
+    <!-- Dark Background -->
+     <div class="fixed inset-0 -z-10 opacity-0 dark:opacity-100 transition-opacity duration-500 pointer-events-none">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10">
+        </div>
+     </div>
+
+     <!-- header -->
+      <header class="fixed w-full top-0 z-50 bg-white/95 dark:bg-dark-background/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="container max-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-xl font-extrabold">Hi</span>
+                    <span class="text-green-500 text-2xl ml-1">•</span>
+                </div>
+                <ul class="flex space-x-8">
+                    <li>
+                        <a href="#features" class="text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Showcase</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Contact</a>
+                    </li>
+                </ul>
+                <div class="flex items-center space-x-4">
+                    <button id="themetoggle" class="">
+                        <i class="fa-solid fa-moon text-gray-600 dark:text-gray-400"></i>
+                    </button>
+                    <button class="md:hidden p-2" id="menutoggle">
+                        <div class="w-6 h-5 flex flex-col justify-between">
+                            <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                            <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                            <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+      </header>
+      <!-- Hero Section -->
+       <section id="hero" class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-6xl font-bold mb-6">
+                    The <span class="bg-gradient-to-r from-green-600 via-secondary to-accent bg-clip-text text-transparent">FullStack Developer</span> &<span class="bg-gradient-to-r from-green-600 via-secondary to-accent bg-clip-text text-transparent"> AI/ML Enthusiast</span>
+                </h1>
+                <p class="text-2xl text-gray-600 dark:text-gray-400 mb-8">
+                    Creating <strong>scalable web apps </strong>with Java and Spring Boot with best practices for exceptional user experience.
+                </p>
+                <div class="flex flex-col gap-4 justify-center mb-12">
+                    <a href="#projects" class="px-8 py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-green-300/30 dark:hover:shadow-green-500/20 shadow-green-200/20 dark:shadow-green-700/10">
+                        View Projects
+                    </a>
+                    <a href="#about" class="px-8 py-3"></a>
+                </div>
+            </div>
+        </div>
+       </section>
+</body>
+</html>
