@@ -29,10 +29,10 @@
         <div class="container max-auto px-4">
             <nav class="flex justify-between items-center py-4">
                 <div class="flex items-center">
-                    <span class="text-xl font-extrabold">Hi</span>
+                    <span class="text-xl font-extrabold">ShuklaJi</span>
                     <span class="text-green-500 text-2xl ml-1">•</span>
                 </div>
-                <ul class="flex space-x-8">
+                <ul class="hidden md:flex space-x-8">
                     <li>
                         <a href="#features"
                             class="text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Showcase</a>
@@ -55,10 +55,10 @@
                     </li>
                 </ul>
                 <div class="flex items-center space-x-4">
-                    <button id="themetoggle" class="">
+                    <button id="themeToggle" class="">
                         <i class="fa-solid fa-moon text-gray-600 dark:text-gray-400"></i>
                     </button>
-                    <button class="md:hidden p-2" id="menutoggle">
+                    <button class="md:hidden p-2" id="menuToggle">
                         <div class="w-6 h-5 flex flex-col justify-between">
                             <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
                             <span class="w-full h-0.5 bg-gray-600 dark:bg-gray-400 transition-all"></span>
@@ -69,18 +69,57 @@
             </nav>
         </div>
     </header>
+
+     <!-- Mobile Menu -->
+<div id="mobileMenu"
+    class="fixed inset-0 bg-white dark:bg-dark-background z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+    <div class="container mx-auto px-4 h-full flex flex-col">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <span class="text-xl font-extrabold">ShuklaJi</span>
+                <span class="text-green-500 text-2xl ml-1">●</span>
+            </div>
+            <button id="closeMenu" class="p-2">
+                <i class="fa-solid fa-square-xmark text-gray-600 dark:text-gray-400 text-2xl"></i>
+            </button>
+        </div>
+        <ul class="flex-1 flex flex-col justify-center items-center space-y-8">
+            <li>
+                <a href="#features"
+                    class="text-2xl text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Showcase</a>
+            </li>
+            <li>
+                <a href="#About"
+                    class="text-2xl text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">About</a>
+            </li>
+            <li>
+                <a href="#skills"
+                    class="text-2xl text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Skills</a>
+            </li>
+            <li>
+                <a href="#projects"
+                    class="text-2xl text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Projects</a>
+            </li>
+            <li>
+                <a href="#contact"
+                    class="text-2xl text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-500 transition-colors">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
     <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-6xl font-bold mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
                     The <span
                         class="bg-gradient-to-r from-green-600 via-secondary to-accent bg-clip-text text-transparent">Backend
                         Developer</span> &<span
                         class="bg-gradient-to-r from-green-600 via-secondary to-accent bg-clip-text text-transparent">
                         AI/ML Enthusiast</span>
                 </h1>
-                <p class="text-2xl text-gray-600 dark:text-gray-400 mb-8">
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
                     Creating <strong>scalable web apps </strong>with Java and Spring Boot with best practices for
                     exceptional user experience.
                 </p>
@@ -111,7 +150,7 @@
 
     <!-- Features Section -->
     <section id="features"
-        class="py-24 bg-gray-50 dark:bg-dark-background-secondary  translate-y-4 transition-all duration-500 opacity-100">
+        class="py-24 bg-gray-50 dark:bg-dark-background-secondary  translate-y-4 transition-all duration-500 opacity-0">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">What's in my Toolkit</h2>
             <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">
@@ -164,7 +203,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section id="about" class="py-24 translate-y-4 transition-all duration-500 opacity-100">
+    <section id="about" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
@@ -209,7 +248,7 @@
 
     <!-- Skills Section -->
     <section id="skills"
-        class="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-100">
+        class="py-24 bg-gray-50 dark:bg-dark-background-secondary translate-y-4 transition-all duration-500 opacity-0">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My Skills</h2>
             <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">Technologies and tools I use to bring
@@ -320,7 +359,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-24 translate-y-4 transition-all duration-500 opacity-100">
+    <section id="projects" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Featured Projects</h2>
             <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">
@@ -496,7 +535,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 translate-y-4 transition-all duration-500 opacity-100">
+    <section id="contact" class="py-24 translate-y-4 transition-all duration-500 opacity-0">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In Touch</h2>
             <p class="text-xl text-gray-600 dark:text-gray-400 text-center mb-16">
@@ -513,7 +552,7 @@
                             <i class="fa-solid fa-envelope text-green-500 text-xl"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Email</h3>
-                        <p class="text-gray-600 dark:text-gray-400">shuklasiddharth418.com</p>
+                        <p class="text-gray-600 dark:text-gray-400">shuklasiddharth418gmail.com</p>
                     </div>
                     <!-- Location -->
                     <div class="bg-white dark:bg-dark-background p-6 rounded-lg shadow-lg text-center">
@@ -532,15 +571,15 @@
                         </div>
                         <h3 class="text-xl font-bold mb-2">Social</h3>
                         <div class="flex justify-center space-x-4">
-                            <a href="#"
+                            <a href="https://github.com/Siddharth3271"
                                 class="w-10 h-10 bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-green-500 dark:hover:text-green-500 dark:text-gray-400 transition-all duration-300">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="#"
+                            <a href="https://www.linkedin.com/in/siddharth-shukla-61ab0124b"
                                 class="w-10 h-10 bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-green-500 dark:hover:text-green-500 dark:text-gray-400 transition-all duration-300">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
-                            <a href="#"
+                            <a href="https://www.facebook.com/profile.php?id=100088800206854"
                                 class="w-10 h-10 bg-gray-100 dark:bg-dark-background-secondary rounded-full flex items-center justify-center text-gray-600 hover:text-green-500 dark:hover:text-green-500 dark:text-gray-400 transition-all duration-300">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
